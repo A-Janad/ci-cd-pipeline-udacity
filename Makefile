@@ -2,8 +2,7 @@ setup:
 	python3 -m venv ~/.udacity-devops
 
 install:
-	pip install --upgrade pip &&\
-		pip install -r requirements.txt
+	pip install --upgrade pip && pip install -r requirements.txt
 
 test:
 	#python -m pytest -vv --cov=myrepolib tests/*.py
@@ -12,6 +11,6 @@ test:
 
 lint:
 	#hadolint Dockerfile #uncomment to explore linting Dockerfiles
-	pylint --disable=R,C,W0702: app.py
+	pylint --disable=R,C,W1203,W0702: app.py
 
 all: install lint test
