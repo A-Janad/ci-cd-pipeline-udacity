@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify
 from flask.logging import create_logger
+from dns import resolver
 import logging
 
 import pandas as pd
