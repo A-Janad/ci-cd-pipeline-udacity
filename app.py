@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from flask.logging import create_logger
-from dns import resolver
+
 import logging
 
 import pandas as pd
@@ -33,7 +33,7 @@ def predict():
         # clf = joblib.load("./Housing_price_model/LinearRegression.joblib")
         # clf = joblib.load("./Housing_price_model/StochasticGradientDescent.joblib")
         clf = joblib.load("./Housing_price_model/GradientBoostingRegressor.joblib")
-    except resolver.NXDOMAIN:
+    except:
         LOG.info("JSON payload: %s json_payload")
         return "Model not loaded"
 
