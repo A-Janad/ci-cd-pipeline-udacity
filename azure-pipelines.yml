@@ -6,7 +6,7 @@ trigger:
 - master
 
 # TODO: Replace the agent pool name
-pool: Hosted Agent
+pool: MyAgentPool
 
 variables:
   # TODO: Replace the service connection name as used in the DevOps project settings
