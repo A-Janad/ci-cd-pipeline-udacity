@@ -40,6 +40,8 @@ Install dependencies in the virtual environment and run tests:
 ```bash
 (.myrepo) aaaljanad [ ~/ci-cd-pipeline-udacity ]$ make all
 ```
+<img width="917" alt="Screenshot 2023-04-07 190351" src="https://user-images.githubusercontent.com/126161000/230648496-e4d60487-265e-4459-9188-cbb9a68aede4.png">
+
 
 * Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
 
