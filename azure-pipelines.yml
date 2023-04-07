@@ -16,7 +16,7 @@ variables:
   webAppName: 'flask-webapp-udacity'
  
   # Environment name
-  environmentName: 'flask-ml-service'
+  environmentName: 'flask-webapp-udacity'
   # Python version
   pythonVersion: '3.9'
 
