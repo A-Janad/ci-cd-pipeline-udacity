@@ -42,7 +42,19 @@ Install dependencies in the virtual environment and run tests:
 ```
 <img width="917" alt="Screenshot 2023-04-07 190351" src="https://user-images.githubusercontent.com/126161000/230648496-e4d60487-265e-4459-9188-cbb9a68aede4.png">
 
+Start the application in the local environment:
+```bash
+(.myrepo) aaaljanad [ ~/ci-cd-pipeline-udacity ]$ flask run
+```
+<img width="915" alt="Screenshot 2023-04-07 191204" src="https://user-images.githubusercontent.com/126161000/230649554-31850a3a-acaf-4858-ac13-c5ecc48bb46b.png">
 
+Open a separate Cloud Shell and test that the app is working:
+```bash
+(.myrepo) aaaljanad [ ~/ci-cd-pipeline-udacity ]$ ./make_prediction.sh
+``` 
+<img width="915" alt="Screenshot 2023-04-07 191404" src="https://user-images.githubusercontent.com/126161000/230651196-a2ca14d5-a4a9-40d9-a13a-1eab26c8e49e.png">
+
+The output should match the below:
 * Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
 
 * Running Azure App Service from Azure Pipelines automatic deployment
