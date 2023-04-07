@@ -5,25 +5,16 @@ In this project, you will build a Github repository from scratch and create a sc
 ## Project Plan
 
 It is critical to have an effective project plan and task tracking, In this section you find:
-* A [Azure Account](https://trello.com/b/7QrYdgzR/udacity-building-a-ci-cd-pipeline) board for the project
-
+* A [trello](https://trello.com/b/7QrYdgzR/udacity-building-a-ci-cd-pipeline) board for the project
 * A spreadsheet that includes the original and final project plan
-
 
 ## Instructions
 
 <TODO:  
 * Architectural Diagram (Shows how key parts of the system work)>
 
-<TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
+in Azure Cloud Shell, clone the repo:
 
-* Project running on Azure App Service
-
-* Project cloned into Azure Cloud Shell
-
-* Passing tests that are displayed after running the `make all` command from the `Makefile`
-
-* Output of a test run
 
 * Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
 
