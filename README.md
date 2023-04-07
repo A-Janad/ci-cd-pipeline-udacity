@@ -15,6 +15,9 @@ It is critical to have an effective project plan and task tracking, In this sect
 
 in Azure Cloud Shell, clone the repo:
 
+```bash
+git clone git@github.com:A-Janad/ci-cd-pipeline-udacity.git
+```
 
 * Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
 
