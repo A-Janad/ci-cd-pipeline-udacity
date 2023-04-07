@@ -1,12 +1,14 @@
 # Overview
 
-<TODO: complete this with an overview of your project>
+In this project, you will build a Github repository from scratch and create a scaffolding that will assist you in performing both Continuous Integration and Continuous Delivery. You'll use Github Actions along with a Makefile, requirements.txt and application code to perform an initial lint, test, and install cycle. Next, you'll integrate this project with Azure Pipelines to enable Continuous Delivery to Azure App Service.
 
 ## Project Plan
-<TODO: Project Plan
 
-* A link to a Trello board for the project
-* A link to a spreadsheet that includes the original and final project plan>
+It is critical to have an effective project plan and task tracking, In this section you find:
+* A [Azure Account](https://trello.com/b/7QrYdgzR/udacity-building-a-ci-cd-pipeline) board for the project
+
+* A spreadsheet that includes the original and final project plan
+
 
 ## Instructions
 
