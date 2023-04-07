@@ -54,13 +54,23 @@ Open a separate Cloud Shell and test that the app is working:
 ``` 
 <img width="915" alt="Screenshot 2023-04-07 191404" src="https://user-images.githubusercontent.com/126161000/230651196-a2ca14d5-a4a9-40d9-a13a-1eab26c8e49e.png">
 
-The output should match the below:
-* Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
+## CI : Configure GitHub Actions
+You will configure GitHub Actions to test your project upon change events in GitHub. This is a necessary step to perform Continuous Integration remotely.
 
-* Running Azure App Service from Azure Pipelines automatic deployment
+From the top bar of GitHub click on 'Actions', then click on "set up a workflow yourself' and use the GitHub Actions template yaml file located in [.github/workflows/main.yml]
 
-* Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
-The output should look similar to this:
+Once you create this workflow, it will run automatically to build code in Repo:
+
+<img width="913" alt="Screenshot 2023-04-05 002534" src="https://user-images.githubusercontent.com/126161000/230685645-df0e7610-871a-42b1-9ba9-fea47cbc212c.png">
+
+## Deploy the app to an Azure App Service
+Now is time to deploy the app to an azure app service...
+
+Create an App Service in Azure. In this example the App Service is called `flask-webapp-udacity` and the resource group is called `ci-cd-rg`.
+
+```bash
+(.myrepo) aaaljanad [ ~/ci-cd-pipeline-udacity ]$ az webapp up --name flask-webapp-udacity -g ci-cd-rg -l westeurope --sku B2 
+``` 
 
 ```bash
 udacity@Azure:~$ ./make_predict_azure_app.sh
