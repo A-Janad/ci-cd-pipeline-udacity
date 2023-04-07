@@ -18,6 +18,7 @@ in Azure Cloud Shell, clone the repo:
 ```bash
 git clone git@github.com:A-Janad/ci-cd-pipeline-udacity.git
 ```
+<img width="793" alt="Screenshot 2023-04-07 183931" src="https://user-images.githubusercontent.com/126161000/230645445-f2147e78-e05c-449a-888d-5829da7966b1.png">
 
 * Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
 
