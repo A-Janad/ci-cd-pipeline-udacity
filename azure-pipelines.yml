@@ -31,7 +31,6 @@ stages:
     pool: MyAgentPool
     steps:    
     - script: |
-        pythonInterpreter: 'C:\Users\Ahmed.Aljanad\AppData\Local\Programs\Python\Python311\python.exe'
         Python3.11 -m pip install --upgrade pip
         Python3.11 -m pip install setup
         Python3.11 -m pip install -r requirements.txt
