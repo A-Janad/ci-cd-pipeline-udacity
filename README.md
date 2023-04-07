@@ -71,6 +71,16 @@ Create an App Service in Azure. In this example the App Service is called `flask
 ```bash
 (.myrepo) aaaljanad [ ~/ci-cd-pipeline-udacity ]$ az webapp up --name flask-webapp-udacity -g ci-cd-rg -l westeurope --sku B2 
 ``` 
+Next, create the pipeline in Azure DevOps. More information on this process can be found here. The basic steps to set up the pipeline are:
+
+* Go to https://dev.azure.com and sign in.
+* Create a new private project.
+* Under Project Settings create a new service connection to Azure Resource Manager, scoped to your subscription and resource group.
+* Create a new pipeline linked to your GitHub repo.
+
+Screenshot of the App Service in Azure:
+<img width="918" alt="Screenshot 2023-04-08 002633" src="https://user-images.githubusercontent.com/126161000/230686417-78534c3f-1f4d-4a02-a820-9178256f7efb.png">
+
 
 ```bash
 udacity@Azure:~$ ./make_predict_azure_app.sh
