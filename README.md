@@ -20,6 +20,27 @@ git clone git@github.com:A-Janad/ci-cd-pipeline-udacity.git
 ```
 <img width="793" alt="Screenshot 2023-04-07 183931" src="https://user-images.githubusercontent.com/126161000/230645445-f2147e78-e05c-449a-888d-5829da7966b1.png">
 
+Change into the new directory:
+```bash
+aaaljanad [ ~ ]$ cd ci-cd-pipeline-udacity/
+```
+
+Create a virtual environment:
+```bash
+aaaljanad [ ~/ci-cd-pipeline-udacity ]$ python3 -m venv ~/.myrepo
+```
+
+Activate the virtual environment:
+```bash
+aaaljanad [ ~/ci-cd-pipeline-udacity ]$ source ~/.myrepo/bin/activate
+```
+
+Install dependencies in the virtual environment and run tests:
+
+```bash
+(.myrepo) aaaljanad [ ~/ci-cd-pipeline-udacity ]$ make all
+```
+
 * Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
 
 * Running Azure App Service from Azure Pipelines automatic deployment
