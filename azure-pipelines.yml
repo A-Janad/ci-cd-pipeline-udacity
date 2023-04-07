@@ -18,7 +18,7 @@ variables:
   # Environment name
   environmentName: 'flask-ml-service'
   # Python version
-  pythonVersion: '3.9'
+  pythonVersion: '3.11'
 
   # Project root folder. Point to the folder containing manage.py file.
   projectRoot: $(System.DefaultWorkingDirectory)
@@ -31,9 +31,10 @@ stages:
     pool: MyAgentPool
     steps:    
     - script: |
-        Python3.9 -m pip install --upgrade pip
-        Python3.9 -m pip install setup
-        Python3.9 -m pip install -r requirements.txt
+        pythonInterpreter: 'C:\Users\Ahmed.Aljanad\AppData\Local\Programs\Python\Python311\python.exe'
+        Python3.11 -m pip install --upgrade pip
+        Python3.11 -m pip install setup
+        Python3.11 -m pip install -r requirements.txt
       workingDirectory: $(projectRoot)
       displayName: 'myStep 1'
 
