@@ -10,8 +10,10 @@ It is critical to have an effective project plan and task tracking, In this sect
 
 ## Instructions
 
-<TODO:  
-* Architectural Diagram (Shows how key parts of the system work)>
+![cicd1](https://user-images.githubusercontent.com/126161000/230734652-4371e78b-26b3-4e77-8096-59871ee96258.png)
+
+
+The diagram shows the sequence of steps in the construction of the project. The code is pushed to a remote repository provider, in this case GitHub, which triggers the pipeline to be run on a "push" event. GitHub actions is used as our build server. One of the things that makes GitHub Actions extremely convenient is that it is integrated with GitHub, which means that we can have it run builds automatically whenever we commit code to our GitHub repo. In the Continuous Delivery step, the repository on GitHub is connected with Azure Pipelines(a cloud-native build server) to generate the build package after a successful build. This pipeline should connect to a pre-defined Azure webapp and deploy and update the code there. Confirmation that the deployment worked successfully is done by making a POST request, by passing input parameters in JSON and receiving a prediction response. The shell script is responsible for sending some input data to the application via the appropriate port. Each numerical value represents some feature that is important for determining the price of a house in Boston. The source code is responsible for passing that data through a trained, machine learning model, and giving back a predicted value for the house price.
 
 in Azure Cloud Shell, clone the repo:
 
