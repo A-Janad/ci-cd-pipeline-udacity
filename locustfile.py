@@ -5,8 +5,8 @@ class WebsiteTestUser(HttpUser):
 
     @task(1)
     def test1(self):
-        self.client.get("http://localhost:5000")
+        self.client.get("http://localhost:7000")
 
     @task(2)
     def test2(self):
-        self.client.post("http://localhost:5000/predict")
+        self.client.post("http://localhost:7000/predict")
