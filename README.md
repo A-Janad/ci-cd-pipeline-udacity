@@ -112,7 +112,13 @@ for testing the deployed webapp, a new text is added at the end of page title (`
 ## Load Test
 We can use locust to do a load test against our application. In this example we will do a load test against the app running in azure rather than locally.
 
-Install locust and then run locust:
+Install locust 
+
+```bash
+(.myrepo) aaaljanad [ ~/ci-cd-pipeline-udacity ]$ pip install locust 
+```
+
+and then run locust:
 
 ```bash
 (.myrepo) aaaljanad [ ~/ci-cd-pipeline-udacity ]$ locust -f locustfile.py --headless -u 10 -r 3 -t 10s
@@ -122,8 +128,10 @@ This is the output after adding your web app name as the host variable
 
 <img width="919" alt="Screenshot 2023-04-08 185647" src="https://user-images.githubusercontent.com/126161000/230733707-2f786d80-ad57-48f0-9326-05669634e331.png">
 
-## Demo 
+## Enhancements
+In the future, the project can be configured to work with gitflow, so if you commit to a particular branch, the code can continue to be deployed in the corresponding environment (Development, QA, Staging or production).
 
-<TODO: Add link Screencast on YouTube>
+## Demo
+This is the youtube demo of all project steps: [Demo video](https://trello.com/b/7QrYdgzR/udacity-building-a-ci-cd-pipeline)
 
 
