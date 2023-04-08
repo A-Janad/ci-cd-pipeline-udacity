@@ -65,6 +65,8 @@ Once you create this workflow, it will run automatically to build code in Repo:
 
 <img width="913" alt="Screenshot 2023-04-05 002534" src="https://user-images.githubusercontent.com/126161000/230685645-df0e7610-871a-42b1-9ba9-fea47cbc212c.png">
 
+Passing the Github Actions
+
 ## Deploy the app to an Azure App Service
 Now is time to deploy the app to an azure app service...
 
