@@ -114,10 +114,13 @@ We can use locust to do a load test against our application. In this example we 
 
 Install locust and then run locust:
 
+```bash
+(.myrepo) aaaljanad [ ~/ci-cd-pipeline-udacity ]$ locust -f locustfile.py --headless -u 10 -r 3 -t 10s
+```
 
+This is the output after adding your web app name as the host variable 
 
-Open a browser and go to http://localhost:8089. Enter the total number of users to simulate, spawn rate, set the host to https://jose-flaskpipelines.azurewebsites.net/, and click Start Swarming:
-
+<img width="919" alt="Screenshot 2023-04-08 185647" src="https://user-images.githubusercontent.com/126161000/230733707-2f786d80-ad57-48f0-9326-05669634e331.png">
 
 ## Demo 
 
