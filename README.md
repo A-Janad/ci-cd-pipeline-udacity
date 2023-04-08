@@ -134,6 +134,6 @@ This is the output after adding your web app name as the host variable
 In the future, the project can be configured to work with gitflow, so if you commit to a particular branch, the code can continue to be deployed in the corresponding environment (Development, QA, Staging or production).
 
 ## Demo
-This is the youtube demo of all project steps: [Demo video](https://trello.com/b/7QrYdgzR/udacity-building-a-ci-cd-pipeline)
+This is the youtube demo of all project steps: [Demo video](https://www.youtube.com/watch?v=L391HpZXs7g)
 
 
