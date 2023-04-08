@@ -6,7 +6,7 @@ In this project, you will build a Github repository from scratch and create a sc
 
 It is critical to have an effective project plan and task tracking, In this section you find:
 * A [trello](https://trello.com/b/7QrYdgzR/udacity-building-a-ci-cd-pipeline) board for the project
-* A spreadsheet that includes the original and final project plan
+* A [Spreadsheet ](https://github.com/A-Janad/ci-cd-pipeline-udacity/files/11184345/CI-CD_yearly_quarterly_project_plan.xlsx) that includes the original and final project plan
 
 ## Instructions
 
