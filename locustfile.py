@@ -1,6 +1,7 @@
 from locust import HttpUser, between, task
 
 class WebsiteUser(HttpUser):
+    
     host = "https://flask-webapp-udacity.azurewebsites.net:443"
     wait_time = between(5, 15)
 
