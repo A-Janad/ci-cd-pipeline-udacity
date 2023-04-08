@@ -28,7 +28,7 @@ stages:
   displayName: Build stage
   jobs:
   - job: BuildJob
-    pool: MyAgentPool
+    pool: MyAgent
     steps:    
     - script: |
         python -m venv antenv
@@ -71,7 +71,7 @@ stages:
   condition: succeeded()
   jobs:
   - deployment: DeploymentJob
-    pool: myAgentPool
+    pool: myAgent
      
     environment: $(environmentName)
     strategy:
