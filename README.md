@@ -81,20 +81,43 @@ Next, create the pipeline in Azure DevOps. More information on this process can 
 Screenshot of the App Service in Azure:
 <img width="918" alt="Screenshot 2023-04-08 002633" src="https://user-images.githubusercontent.com/126161000/230686417-78534c3f-1f4d-4a02-a820-9178256f7efb.png">
 
+Screenshot of a successful run of the project in Azure Pipelines:
+
+<img width="918" alt="Screenshot 2023-04-08 171621" src="https://user-images.githubusercontent.com/126161000/230729209-e31596ef-d500-4c6a-b8b8-de678199587c.png">
+
+Now, we can test the app. For you case, edit the make_predict_azure_app.sh script with the DNS name of your app. Then run the script on the cloud shell:
 
 ```bash
-udacity@Azure:~$ ./make_predict_azure_app.sh
-Port: 443
-{"prediction":[20.35373177134412]}
+(.myrepo) aaaljanad [ ~/ci-cd-pipeline-udacity ]$ ./make_predict_azure_app.sh 
 ```
+
+you should see the following output:
+
+<img width="914" alt="Screenshot 2023-04-08 172331" src="https://user-images.githubusercontent.com/126161000/230729390-012a0643-4f45-4a29-ac9d-7e3aff8ef107.png">
+
+
+for testing the deployed webapp, a new text is added at the end of page title (`from Azure`)You can also visit the URL of the App Service via the browser and you should see the following page:
+
+<img width="960" alt="Screenshot 2023-04-08 171245" src="https://user-images.githubusercontent.com/126161000/230729718-31be1ce5-9ed6-4e89-af9b-7dab37ecf414.png">
 
 * Output of streamed log files from deployed application
 
+```bash
+(.myrepo) aaaljanad [ ~/ci-cd-pipeline-udacity ]$ az webapp log tail -g ci-cd-rg --name flask-webapp-udacity
+```
+
+<img width="916" alt="Screenshot 2023-04-08 173327" src="https://user-images.githubusercontent.com/126161000/230729877-3bd04d08-7713-4db4-90cc-dd783576eb08.png">
 > 
 
-## Enhancements
+## Load Test
+We can use locust to do a load test against our application. In this example we will do a load test against the app running in azure rather than locally.
 
-<TODO: A short description of how to improve the project in the future>
+Install locust and then run locust:
+
+
+
+Open a browser and go to http://localhost:8089. Enter the total number of users to simulate, spawn rate, set the host to https://jose-flaskpipelines.azurewebsites.net/, and click Start Swarming:
+
 
 ## Demo 
 
