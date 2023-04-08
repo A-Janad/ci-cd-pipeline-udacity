@@ -65,8 +65,15 @@ Once you create this workflow, it will run automatically to build code in Repo:
 
 <img width="913" alt="Screenshot 2023-04-05 002534" src="https://user-images.githubusercontent.com/126161000/230685645-df0e7610-871a-42b1-9ba9-fea47cbc212c.png">
 
+<<<<<<< HEAD
+Passing GitHub Actions:
+
+[![Python application test with Github Actions](https://github.com/A-Janad/ci-cd-pipeline-udacity/actions/workflows/python-app.yml/badge.svg)](https://github.com/A-Janad/ci-cd-pipeline-udacity/actions/workflows/python-app.yml)
+
+=======
 Passing the Github Actions
 
+>>>>>>> 817170bcb64b7599e5ee82e26913459f2322b804
 ## Deploy the app to an Azure App Service
 Now is time to deploy the app to an azure app service...
 
